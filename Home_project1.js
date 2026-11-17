@@ -6,7 +6,7 @@ let content = document.querySelector("#content");
 
 
 function change (d){
-    let arr_color = fetch("data.Json").then(r => r.json()).then(arr_color => {
+    let arr_color = fetch("data.json").then(r => r.json()).then(arr_color => {
     let num = Math.floor(Math.random() * 4) + 1 ;
     
 
