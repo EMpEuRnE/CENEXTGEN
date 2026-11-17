@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.Back{
+    animation: popIn 5s ease-in-out infinite;
+    transform: scale(0);
+    opacity: 0;
+}
+
+
+
+/* ----------------header-------------------*/
+
+header {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left ,rgb(21, 38, 38) ,rgb(15, 33, 33) );
+    padding-bottom: 30px ;
+   
+}
+
+.img_Logo{
+    display: flex;
+     flex-direction: row;
+     gap: 10px;
+
+     img {
+        width: 40px;
+     }
+
+     span {
+        color: white;
+        font-size: 40px;
+     }
+}
+
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    
+}
+/* ----------------header-------------------*/
+
+
+
+
+
+
+/* ----------------body-------------------*/
+
+body {
+    background: linear-gradient(to left ,rgb(36, 65, 65) ,rgb(15, 33, 33) );
+}
+
+/* ----------------body-------------------*/
+
+
+
+
+
+
+/* ----------------content-------------------*/
+section {
+    margin: 100px;
+    justify-content: center;
+    height: 500px;
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.08);;
+    border-radius: 100px;
+}
+
+.Back {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
+    .profile {
+        position: relative;
+        left: -120px;
+        top:150px;
+
+    }
+    .profile img {
+        border-radius: 100px;
+        height: 300px;
+        width: 300px;
+    }
+    
+    .data {
+        position: relative;
+        top: 150px;
+    }
+    .data p {
+        line-height: 70px;
+        font-size: 40px;
+        color: aliceblue;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .background {
+    
+    height: 700px;
+    padding: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 45px;
+
+    .background_text {
+        border-radius: 20px;
+        color: #FFFFFF;
+        display: flex;
+        padding-top: 100px;
+        padding-left: 120px;
+        padding-right: 120px;
+        padding-bottom: 100px;
+        background-color: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        color: #FFFFFF;
+    }
+
+    .text {
+        font-size: 30px;
+        line-height: 50px;
+        color: aliceblue;
+    }
+}
+     */
+
+
+
+
+/* ----------------content-------------------*/
+
+

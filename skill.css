@@ -1,0 +1,181 @@
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+/* ----------------header-------------------*/
+
+header {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left ,rgb(21, 38, 38) ,rgb(15, 33, 33) );
+    padding-bottom: 30px ;
+    
+   
+}
+
+
+
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+.skill1 , .skill2{
+    animation: popIn 5s ease-in-out infinite;
+    transform: scale(0);
+    opacity: 0;
+}
+
+
+
+.img_Logo{
+    display: flex;
+     flex-direction: row;
+     gap: 10px;
+
+     img {
+        width: 40px;
+     }
+
+     span {
+        color: white;
+        font-size: 40px;
+     }
+}
+
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    
+}
+/* ----------------header-------------------*/
+
+
+
+
+
+
+/* ----------------body-------------------*/
+
+body {
+    background: linear-gradient(to left ,rgb(36, 65, 65) ,rgb(15, 33, 33) );
+    height: 1300px;
+}
+
+/* ----------------body-------------------*/
+
+
+
+
+
+
+/* ----------------content-------------------*/
+
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap : 50px ;
+    margin-top : 100px;
+
+    
+
+    .skill1 {
+        padding: 50px;
+        border: 1px rgb(239, 233, 233) double;
+        border-radius: 20px;
+        width: 750px;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.08);
+        display: flex;
+        
+        
+
+        .text{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            line-height: 40px;
+            color :aliceblue;
+        }
+       
+        .text h2{
+            font-size: 30px;
+        }
+
+        .text a {
+            text-decoration: none;
+            color: blue;
+        }
+
+        .text img {
+            width: 500px;
+            height: 550px;
+        }
+    }
+
+    .skill2 {
+        padding: 50px;
+        border: 1px rgb(239, 233, 233) double;
+        border-radius: 20px;
+        width: 750px;
+        height: 400px;
+        background-color: rgba(255, 255, 255, 0.08);
+        display: flex;
+        
+        
+
+
+
+        img {
+           width: 640px;
+           height: 300px;
+           
+        }
+    }
+
+}
+
+
+
+
+/* ----------------content-------------------*/
+
+

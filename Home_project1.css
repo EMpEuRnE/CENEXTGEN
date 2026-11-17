@@ -1,0 +1,170 @@
+
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+/* ----------------header-------------------*/
+
+header {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to left ,rgb(21, 38, 38) ,rgb(15, 33, 33) );
+    padding-bottom: 30px ;
+   
+}
+
+.img_Logo{
+    display: flex;
+     flex-direction: row;
+     gap: 10px;
+
+     img {
+        width: 40px;
+     }
+
+     span {
+        color: white;
+        font-size: 40px;
+     }
+}
+
+
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    list-style: none;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    
+}
+
+
+
+
+
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  70% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+#profile{
+    animation: popIn 5s ease-in-out infinite;
+    transform: scale(0);
+    opacity: 0;
+}
+
+
+@keyframes slideAndFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 2. Apply it to an element */
+.first , .second ,.contact {
+   animation: slideAndFade 1s ease-out forwards  ;
+}
+
+/* ----------------content-------------------*/
+section {
+    
+  
+    background: linear-gradient(to left ,rgb(36, 65, 65) ,rgb(35, 56, 56) );
+
+}
+.content_txt{
+    padding-top: 150px;
+    padding-left: 65px;
+    line-height: 70px;
+    
+
+    
+       
+    
+    .contact img {
+        margin-top: 50px;
+        width: 35px;
+        border-radius: 10px;
+
+            
+        
+    }
+    .first {
+        display: flex;
+        font-size: 45px;
+        gap: 20px;
+        color: aliceblue;
+        
+    }
+    
+    .second {
+        font-size: 70px;
+        color: rgb(37, 230, 230);
+    }
+}
+
+
+.content_img {
+    display:flex;
+    justify-content: end;
+    padding-right: 115px ;
+    
+    
+    img {
+        width: 350px;
+        border-radius: 30px ;
+        position: relative;
+        bottom: 270px;
+        display: inline-block;
+        
+    }
+
+    
+    #back_btn{
+        background-color: rgb(23, 56, 84);
+    
+        #btn {
+            color: blueviolet;
+        }
+        
+    }
+}
+
+
+
+/* ----------------content-------------------*/
